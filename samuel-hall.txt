@@ -1,0 +1,135 @@
+https://codepen.io/bixbyhall/pen/xxRRJQg?editors=1100
+
+1. What is Semantic HTML?
+	-Semantice HTML is the newest best practice for HTML that allows meaning to be assigned to elements through the code. An example is the header tag <header>. One benefit of this is the ability for people who use the internet with a variety of disabilites to get more from the experience.
+
+2. What is HTML used for?
+	-HTML or Hypertext Markup Language is used to create the basic structure of a website that can be built upon and styled using CSS and interactivity can be created with JavaScript
+3. What is an attribute and where do we put it?
+	-An attribute is a piece of code that gives additional information about an element to the tag. They are always in the start tag of the tag pair. An example is <a href=...> where
+ href= is the attribute.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+	-The h1 tag is used to make a piece of text a header of the largest size. You should only ever have one h1 tag on a page with the rest being h2 or smaller. This is to avoid 
+confusion and to create a hierarchy of headers that improve the experience for the viewer.
+
+5. Name two tags that have required attributes.
+	-The <a> tag requires the href attribute and the img requires the src attribute.
+
+6. What do we put in the head of our HTML document?
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		[Any metadata]
+	</head>
+	<body>
+
+7. What is an id?
+	-An id is a way of demarking a singular element for later sylization in css. there can  only every be one element with a specifc id.
+
+8. What elements can I add an id to?
+	-Almost all tags can have an id those that cannot include <base> <head> <html> <meta> <script> and <title>.
+
+9. How many times on a page can you use an id?
+	-An id can only be used once on a page.
+
+10. What is a class?
+	-A class is an attribute for an element that allows you to style more than one element with css later on. Like an id however can be used on more than one element.
+
+11. What elements can I add a class to?
+	-A class can be added to nearly every element other than those id's cannot be added to, as well as <basefont> and <param>
+
+12. How many times can I use the same class on a page?
+	-A class can be used as many times as you'd like on a page.
+
+13. How do I get my link to open in a new tab?
+	-You can use the target="_blank" attribute within the a tag.
+
+14. What is the alt attribute in the image tag used for?
+	-The alt attribute is used to give a name to the image to allow those with sight related disabilities to more easily interact with the site.
+
+15. How do I reference an id?
+	-In the css you reference an id with #[insert id name here].
+
+16. What is the difference between a section and a div?
+	-A section demarks the start and end of a semantic portion of a document or website, while a div is for organizing the actual HTML these are different in small ways.
+
+17. What is CSS used for?
+	-CSS, or Cascading Style Sheet is used like paint and trim are in building a house. It does not effect the underlying foundation while changing the outward appearance.
+
+18. How do we select an element?
+	-To select an element in CSS you simply type the name followed by a curly brace pair. Using h2 as an example it would look like this
+h2 {
+	[input the style here]
+} 
+
+19. What is the difference between a class and an id?
+	-I already answered this earlier when describing a class and id but basically they are different in that an id can only be used once per page while multiple elements can be membe
+rs of a singular class.
+
+20. How do we select classes in CSS?
+	-To select a class in CSS and stylize it, you put a period before the name of the class .[class-name]
+
+21. How do we select a p element with a single class of 'human'?
+	-To select a p element with a class you would write the code like this
+p .human {}
+
+22. What is a parent child selector? When would this be useful?
+	-The parent child selector allows you to select very specific groups of elements. This can be useful as you don't always need to use classes, instead using the parent child selec
+tor. Ex. parent > child {}
+
+23. How do you select all of the links within a div with the class of sidebar?
+	-This question is worded a little strangely with two possible meanings so I will give an answer for both just in case. Ex. 1 If you mean that each link is a member of the sideba 
+class
+
+div a .sidebar {}
+	Ex.2 If you mean that the div has a class of sidebar
+.sidebar a {}
+
+24. What is the pseudo selector?
+	-a way of denoting special states of an element, like hover or when clicked.
+
+25. What do we use to change the space between lines?
+	-the line-height propety
+
+26. What do we use to change the space between the letters?
+	-the letter-space property.
+
+27. How do you make all text to be uppercase, or lowercase or capitalized?
+	-the text-transform property with values of uppercase, lowercase, or capitilize respectively.
+
+28. How do I make a border around a div?
+	-border: 1px dotted black;
+
+29. How do I select everything on a page?
+	- the * selector will select everything.
+
+30. How do I write a comment in CSS?
+	-/* comment here */
+
+31. How do I find out what file I am in, when I am using the command line?
+	-To know what directory you are in you can see your absolute path from your home directory on the left side of the command line. You can also use the whereami command which will 
+output your absolute path.
+
+32. How do I list the files and directories within the working directory?
+	-Use the ls command and to see hidden files use the ls -al command
+
+33. How do I remove a file with the command line? Why do I have to be careful with this?
+	-Use the rm command. You have to be careful because this command can delete any and all files in the system including those that are integral to the operating system.
+
+34. Why should I use version control?
+	-Version control is necessary for backing up versions in case of a bug, as well as allowing easy coordination of updates, and finally for collaboraton to be easy between devs.
+
+35. How often should I commit to GitHub?
+	-When you have your own branch off the main project, you can commit as much as you'd like. Or you could intermittently test and then be able to find out what is causing an issue 
+quicker.
+
+36. What is the command that we use to push our repo to GitHub?
+	-The git push command.
+
+37. Walk me through Lambda's Git Flow.
+	- First fork the project so that you will not be modifying the original repo on Lambda's GitHub. Then Clone the repo onto your local computer. cd into the new repo
+and create a branch with your first-last as the name, using the git checkout -b 'first-last' as the command. Next, begin to work on the project. Whenever you want to back up the changes
+on GitHub, you start by git add ., then git commit -m "commit message" and finall git push -u origin branch-name. Finally open GitHub on your browser and submit a pull-request.
+When submitting the pull request, make sure that your not submitting a request to commit to the Lambda branch but commit to your forked repo.
+
