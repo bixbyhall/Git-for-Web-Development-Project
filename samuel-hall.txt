@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://codepen.io/bixbyhall/pen/xxRRJQg?editors=1100
 
 1. What is Semantic HTML?
@@ -133,3 +134,11 @@ and create a branch with your first-last as the name, using the git checkout -b 
 on GitHub, you start by git add ., then git commit -m "commit message" and finall git push -u origin branch-name. Finally open GitHub on your browser and submit a pull-request.
 When submitting the pull request, make sure that your not submitting a request to commit to the Lambda branch but commit to your forked repo.
 
+=======
+Stretch Questions
+
+	1. What is the difference between an inline element and a block element?
+	2. What happens when an element is positioned absolutely?
+	3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+	4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element
+>>>>>>> f469db9ff298ff34d819da02db3772aaad60c82e
